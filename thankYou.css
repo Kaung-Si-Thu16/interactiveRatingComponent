@@ -1,0 +1,58 @@
+body {
+    --Orange: hsl(25, 97%, 53%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --MediumBlue: #293851;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.card {
+    width: 35%;
+    height: 420px;
+    background-color: var(--DarkBlue);
+    border-radius: 5%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.selection {
+    width: 50%;
+    background-color: var(--MediumBlue);
+    border-radius: 24px;
+    color: var(--Orange);
+    text-align: center;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.selection p {
+    line-height: 40px;
+}
+
+.thankYou {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.paragraph {
+    text-align: center;
+    padding: 0 7% 0 7%;
+}
