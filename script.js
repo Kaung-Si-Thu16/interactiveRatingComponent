@@ -1,39 +1,3 @@
-// for (let i = 0; i < buttons.length; i++) {
-//     let clickedBtn = buttons[i].item
-//     clickedBtn.addEventListener("click", function(e) {
-
-//         let clickedId = e.target.dataset.num;
-//         buttons.find(button => button.id == clickedId).clicked = true;
-//         let exceptBtn = buttons.filter(button => button.id != clickedId)
-//         exceptBtn.map(e => e.clicked = false)
-//         console.log(buttons)
-//     })
-// }
-// const clickedBtn1 = () => {
-//     button1.name = true
-//     console.log(button1.name);
-// }
-
-// const clickedBtn2 = () => {
-//     console.log(button2.name);
-//     button2.name = "true"
-
-// }
-
-// const clickedBtn3 = () => {
-//     console.log(button3.name);
-//     button3.name = "true"
-
-// }
-
-// const clickedBtn4 = () => {
-//     console.log(button4.name);
-// }
-
-// const clickedBtn5 = () => {
-//     console.log(button5.name);
-// }
-
 const button1 = document.querySelector("#btn1");
 const button2 = document.querySelector("#btn2");
 const button3 = document.querySelector("#btn3");
