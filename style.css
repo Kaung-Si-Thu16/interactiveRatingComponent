@@ -63,8 +63,6 @@ body {
 }
 
 .button {
-    background-color: hsl(0, 0%, 23%);
-    color: var(--LightGrey);
     width: 45px;
     height: 45px;
     border: none;
@@ -73,18 +71,20 @@ body {
 }
 
 .button:hover {
-    background-color: hsl(0, 0%, 70%);
+    background-color: var(--Orange) !important;
+    color: white !important;
+}
+
+.button:active {
+    background-color: var(--Orange) !important;
     color: white;
+    transform: scale(0.88);
 }
 
 .submit {
     display: flex;
     justify-content: center;
     margin: 5%;
-}
-
-.submit a {
-    width: 100%;
 }
 
 .submit button {
@@ -111,10 +111,11 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    display: none;
 }
 
 .card2 {
-    width: 35%;
+    width: 30%;
     height: 420px;
     background-color: var(--DarkBlue);
     border-radius: 5%;
@@ -139,6 +140,7 @@ body {
 }
 
 .selection p {
+    font-weight: 700;
     line-height: 40px;
 }
 
@@ -147,4 +149,93 @@ body {
     margin-top: 7%;
     font-size: 30px;
     font-weight: 700;
+}
+
+.paragraph2 {
+    text-align: center;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1020px) and (min-width:500px) {
+    .container {
+        margin-top: 30%;
+    }
+    .card {
+        width: 100%;
+        height: 660px;
+    }
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .headline {
+        margin-top: 3%;
+        font-size: 40px;
+    }
+    .paragraph {
+        font-size: 28px;
+    }
+    .button {
+        width: 80px;
+        height: 80px;
+        font-size: 28px;
+    }
+    .submit button {
+        height: 80px;
+        border-radius: 36px;
+        font-size: 25px;
+    }
+    .container2 {
+        margin-top: 30%;
+    }
+    .card2 {
+        width: 77%;
+        height: 620px;
+        border-radius: 8%;
+    }
+    .selection {
+        width: 55%;
+        height: 50px;
+    }
+    .selection p {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .thankYou {
+        font-size: 45px;
+    }
+    .paragraph2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .container {
+        margin-top: 30%;
+    }
+    .card {
+        width: 95%;
+        height: 390px;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+    .container2 {
+        margin-top: 30%;
+    }
+    .card2 {
+        width: 95%;
+        height: 410px;
+    }
+    .selection {
+        height: 35px;
+    }
+    .selection p {
+        line-height: 35px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .paragraph2 {
+        font-size: 14px;
+    }
 }

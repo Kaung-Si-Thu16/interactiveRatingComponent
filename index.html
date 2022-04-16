@@ -23,16 +23,21 @@
                 <p class="text-secondary paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
 
-            <div class="buttons">
-                <button onclick="clickedBtn1()" id="btn1" name="1" class="button">1</button>
-                <button onclick="clickedBtn2()" id="btn2" name="2" class="button">2</button>
-                <button onclick="clickedBtn3()" id="btn3" name="3" class="button">3</button>
-                <button onclick="clickedBtn4()" id="btn4" name="4" class="button">4</button>
-                <button onclick="clickedBtn5()" id="btn5" name="5" class="button">5</button>
+            <div class="buttons" id="button-container">
+                <button id="btn1" data-num="1" name="false" style="background-color: hsl(0, 0%, 23%);
+                color: var(--LightGrey);" class="button">1</button>
+                <button id="btn2" data-num="2" name="false" style="background-color: hsl(0, 0%, 23%);
+                color: var(--LightGrey);" class="button">2</button>
+                <button id="btn3" data-num="3" name="false" style="background-color: hsl(0, 0%, 23%);
+                color: var(--LightGrey);" class="button">3</button>
+                <button id="btn4" data-num="4" name="false" style="background-color: hsl(0, 0%, 23%);
+                color: var(--LightGrey);" class="button">4</button>
+                <button id="btn5" data-num="5" name="false" style="background-color: hsl(0, 0%, 23%);
+                color: var(--LightGrey);" class="button">5</button>
             </div>
 
             <div class="submit">
-                <button onclick="gg()">S U B M I T</button>
+                <button onclick="showAndHide()">S U B M I T</button>
             </div>
 
         </div>
@@ -45,12 +50,14 @@
             </div>
 
             <div class="selection">
-                <p>You selected 4 out of 5</p>
+                <p class="selectionText"></p>
             </div>
 
             <div class="texts">
                 <p class="thankYou">Thank you!</p>
-                <p class="paragraph text-secondary">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+                <p class="paragraph2 d-inline text-secondary">We appreciate you taking the time to give a rating.</p>
+                <p class="d-inline text-secondary paragraph2" style="margin-top: -15px;"> If you ever need more support, don't hesitate to</p>
+                <p class="d-inline text-secondary paragraph2" style="margin-top: -15px;">get in touch!</p>
             </div>
         </div>
     </div>
